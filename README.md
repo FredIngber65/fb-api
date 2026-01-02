@@ -87,7 +87,7 @@ Hinweise zur Verwendung, der fachlichen Gegebenheiten und zu Besonderheiten sind
 ## Aufruf Endpunkt „/appinfo“
 Bei Nutzung der mit openapi-codegen-cli generierten C#-Klassen:
 ```csharp
-var apiInstance = new Api.AppInfoApi("https://ab-server:9001/fb-api");
+var apiInstance = new Api.AppInfoApi("https://fb-server:9001/fb-api");
 try
 {
   var result = apiInstance.AppinfoGetWithHttpInfo();
@@ -109,9 +109,9 @@ configuration.AddApiKey(apiKeyIdentifier, apiKeyValue);
 # Troubleshooting
 
 ## Protokollierung der API
-Der Webservice schreibt auf dem Rechner, auf dem er gestartet wurde, ein Protokoll der API in das Verzeichnis %TEMP%\HsAbWebservice.
+Der Webservice schreibt auf dem Rechner, auf dem er gestartet wurde, ein Protokoll der API in das Verzeichnis %TEMP%\HsFbWebservice.
 
-Wenn der Webservice als Dienst eingerichtet ist, wird das Protokoll der API unter %PROGRAMDATA%\Hs\Ab\Trace\Webservice gespeichert.
+Wenn der Webservice als Dienst eingerichtet ist, wird das Protokoll der API unter %PROGRAMDATA%\Hs\Fb\Trace\Webservice gespeichert.
 
 Bei Bedarf kann für jeden Webservice ein weiteres Protokoll aktiviert werden. In diesem werden dann die Daten protokolliert, die je nach Request übertragen werden.
 
